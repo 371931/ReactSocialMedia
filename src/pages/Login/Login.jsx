@@ -20,7 +20,7 @@ function Login(){
             <div className="login-left">
                 <h1>Hello world!</h1>
                 <p>Join our vibrant community! Create your account now and connect with friends, share your stories, and explore endless possibilities. Your social journey begins with just a few clicks – Register and join the excitement!</p>
-                <Link to="/register">
+                <Link className="but" to="/register">
                 <button className="button" >Register</button>
                 </Link>
             </div>

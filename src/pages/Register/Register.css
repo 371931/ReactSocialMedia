@@ -41,15 +41,25 @@
     line-height: 30px;
 }
 
+.but{
+    align-self: center;
+}
+
 .button{
     width: 120px;
     padding: 10px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    align-self: center;
     font-size: 16px;
     font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
 }
 
 .left{
@@ -100,4 +110,10 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.left > form > button:hover{
+    background-color: transparent;
+    border: 1px solid black;
 }

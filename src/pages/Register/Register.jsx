@@ -28,7 +28,7 @@ function Register(){
         <div className="container">
         <div className="card">
             <div className="left">
-                <h1>Login</h1>
+                <h1>Register</h1>
                 <form action="" method="post">
                     <input type="text" name="username" placeholder="Username" autoFocus/>
                     <div>
@@ -45,7 +45,7 @@ function Register(){
             <div className="right">
                 <h1>Hello world!</h1>
                 <p>Reconnect and Ignite: Every Login Sparks New Social Connections, Unveiling Your Ever-Growing Hub!</p>
-                <Link to="/login">
+                <Link to="/login" className="but">
                 <button className="button">Login</button>
                 </Link>
             </div>

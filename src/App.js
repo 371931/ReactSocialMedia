@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
@@ -6,6 +6,7 @@ import {
   createBrowserRouter,
   Outlet,
   RouterProvider,
+  Navigate
 } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
 import Leftbar from "./components/leftbar/Leftbar";
@@ -14,6 +15,8 @@ import Home from "./components/home/Home";
 import Profile from "./components/profile/Profile";
 
 function App() {
+
+  const [curUser,upUser] = useState(true);
 
   function Layout(){
     return(
@@ -28,10 +31,18 @@ function App() {
     );
   }
 
+  function ProtecedPage({children}){
+    if(!curUser){
+      return <Navigate to="/login"/>
+    }
+
+    return children
+  }
+
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: <ProtecedPage><Layout /></ProtecedPage>,
       children:[
         {
           path:"/",

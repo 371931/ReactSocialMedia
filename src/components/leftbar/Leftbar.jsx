@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import "./Left.css";
 import Avatar from '@mui/material/Avatar';
 import Friends from "../../assets/images/1.png";
@@ -14,10 +14,14 @@ import Messages from "../../assets/images/10.png";
 import Fundraiser from "../../assets/images/11.png";
 import Tutorials from "../../assets/images/12.png";
 import Cources from "../../assets/images/13.png";
+import { myContext } from "../../App";
 
 function Leftbar(){
+
+    const {mode} = useContext(myContext);
+
     return(
-        <div className="leftBar">
+        <div className="leftBar" style={{backgroundColor: !mode && "#222",color: !mode && "white"}}>
             <div className="profile"><Avatar className="profilr" /> Samuel Raj</div>
             <div className="friends"><img src={Friends} alt="" /> Friends</div>
             <div className="group"><img src={Groups} alt="" /> Groups</div>

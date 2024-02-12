@@ -10,23 +10,28 @@ import GridViewIcon from '@mui/icons-material/GridView';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 function NavBar() {
+
+    function onCliFocus(){
+        document.querySelector("#searchBar").focus();
+    }
+
     return (
         <div className="nav">
             <div className="nav-left">
                 <div className="appName">LevelUp</div>
-                <HomeOutlinedIcon />
-                <DarkModeOutlinedIcon />
-                <GridViewIcon />
+                <HomeOutlinedIcon style={{cursor:"pointer"}} />
+                <DarkModeOutlinedIcon style={{cursor:"pointer"}} />
+                <GridViewIcon style={{cursor:"pointer"}} />
                 <div className="search">
-                    <SearchOutlinedIcon className="icon" />
+                    <SearchOutlinedIcon onClick={onCliFocus} className="icon" style={{cursor:"pointer"}} />
                     <input type="text" name="serach" id="searchBar" placeholder="search..."/>
                 </div>
             </div>
             <div className="nav-right">
-                <PersonOutlineOutlinedIcon />
-                <EmailOutlinedIcon />
-                <NotificationsNoneOutlinedIcon />
-                <div><Avatar /> Samuel Raj</div>
+                <PersonOutlineOutlinedIcon style={{cursor:"pointer"}} />
+                <EmailOutlinedIcon style={{cursor:"pointer"}} />
+                <NotificationsNoneOutlinedIcon style={{cursor:"pointer"}} />
+                <div style={{cursor:"pointer"}} ><Avatar  /> Samuel Raj</div>
             </div>
         </div>
     );

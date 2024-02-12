@@ -22,7 +22,7 @@ function App() {
     return(
       <div>
         <NavBar />
-        <div style={{display : "flex"}}>
+        <div style={{display : "flex", position:"relative", gap:"10px"}}>
           <Leftbar />
           <Outlet />
           <Rightbar />

@@ -2,7 +2,7 @@
     flex: 2;
     position: sticky;
     top: 58px;
-    height: calc(100vh - 58px);
+    height: calc(100vh - 56px);
     overflow: scroll;
     overflow-x: hidden;
     background-color: #eee;
@@ -131,3 +131,7 @@
     padding: 5px;
     font-weight: 500;
 }
+
+.div2{
+    white-space: nowrap;
+} 

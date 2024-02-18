@@ -8,7 +8,7 @@
     flex: 1;
     position: sticky;
     top:58px;
-    height: calc(100vh - 58px);
+    height: calc(100vh - 56px);
     overflow: scroll;
     box-shadow: 0 0 4px rgba(0, 0, 0, .2) !important;
     background-color: #fff;

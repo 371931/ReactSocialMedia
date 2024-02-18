@@ -18,7 +18,7 @@ export const myContext = createContext({});
 
 function App() {
 
-  const [curUser,upUser] = useState(true);
+  const [curUser,upUser] = useState(false);
   let moder = localStorage.getItem("mode") == "true";
   const [mode,upMode] = useState(moder);
 

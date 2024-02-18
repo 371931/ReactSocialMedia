@@ -121,3 +121,98 @@
     background-color: white;
     color: black;
 }
+
+.but1{
+    display: none;
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 575px) {
+    /* Styles for extra small devices */
+
+    .login-left{
+        display: none;
+    }
+
+    .login-card{
+        width: 90%;
+        height: 400px;
+    }
+
+    .login-right{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .but1{
+        align-self: center;
+        display: block;
+    }
+
+    .login-card{
+        height: 500px;
+        width: 60%;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small devices */
+    .login-left{
+        display: none;
+    }
+
+    .login-right{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .but1{
+        align-self: center;
+        display: block;
+    }
+
+    .login-card{
+        height: 500px;
+        width: 60%;
+    }
+}
+
+/* Medium Devices (Laptops and Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Styles for medium devices */
+    .login-left{
+        display: none;
+    }
+
+    .login-right{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .but1{
+        align-self: center;
+        display: block;
+    }
+
+    .login-card{
+        height: 500px;
+        width: 60%;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .login-right{
+        padding: 20px;
+    }
+    
+}

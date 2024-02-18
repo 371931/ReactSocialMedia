@@ -25,25 +25,29 @@
     padding-right: 20px;
 }
 
-.nav-right > div{
+.nav-right > div > a{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.search{
+.searchLaptop{
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.search > input{
+.searchLaptop > input{
     border: 1px solid #ccc;
     width: 300px;
     padding: 10px 40px;
 }
 
-.search > .icon{
+.searchLaptop > .icon{
     position: absolute;
     left: 10px;
+}
+
+.searchMobile{
+    display: none;
 }

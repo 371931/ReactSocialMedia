@@ -33,6 +33,9 @@ function Login(){
                     <img src={imgsrc}  onClick={passEyeOncli}/>
                     </div>
                     <button>Login</button>
+                    <Link className="but1" to="/register">
+                <button className="button" >Register</button>
+                </Link>
                 </form>
             </div>
         </div>
